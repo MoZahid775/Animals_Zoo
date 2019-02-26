@@ -12,6 +12,8 @@ Here are some questions to consider:
 
 Here are some of our deliverables:
 
+_Keep in mind that in order to properly build out the relationships between an `Animal` and a `Zoo` class, an instance of one need to know about the instance of the other. Consider where and how this dependency needs to be implemented._
+
 ## Zoo Class
 - A `zoo` should be initialized with a name and a location, which should both be passed as strings.
 - `Zoo#location` should return the location of the zoo instance.
@@ -31,7 +33,5 @@ Here are some of our deliverables:
 - `Animal.all` should return an array of all the animal instances.
 - `Animal#zoo` should return the zoo instance that the instance belongs to.
 - `Animal.find_by_species` should take in an animal's species as an argument and return an array of all the animals, which are of that species.
-
-Keep in mind that in order to properly build out the relationships between an `Animal` and a `Zoo` class, an instance of one should know about the instance of the other. Consider thinking about where and how this dependency should be implemented.
 
 There are no `rspec` files, so it's up to you to test your code within the `run.rb` file.
