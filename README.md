@@ -10,11 +10,11 @@ Here are some questions to consider:
 * What are the relationships between your models? 
 * Which model should know about the other in its initialization?
 
-Here are some of our deliverables:
+## Here are some of our deliverables:
 
 _Keep in mind that in order to properly build out the relationships between an `Animal` and a `Zoo` class, an instance of one need to know about the instance of the other. Consider where and how this dependency needs to be implemented._
 
-## Zoo Class
+### Zoo Class
 - A `zoo` should be initialized with a name and a location, which should both be passed as strings.
 - `Zoo#location` should return the location of the zoo instance.
 - `Zoo#name` should return the name of the zoo instance.
@@ -25,7 +25,7 @@ _Keep in mind that in order to properly build out the relationships between an `
 - `Zoo#animal_nicknames` should return an array of all the nicknames of animals that a specific instance of a zoo has.
 - `Zoo.find_by_location` should take in a location as an argument and return an array of all the zoos within that location.
 
-## Animal Class
+### Animal Class
 - An `animal` should be instantiated with the species (e.g. "Cat", "Dog", "Rat"), a numerical weight and a nickname. Keep in mind that the animal's species and nickname should not be able to change, but its weight can.
 - `Animal#nickname` should return the nickname of the animal.
 - `Animal#weight` should return the weight of the animal.
